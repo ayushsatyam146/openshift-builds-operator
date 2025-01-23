@@ -100,7 +100,6 @@ spec:
   provider:
     name: Red Hat
     url: https://www.redhat.com
-  version: 1.1.0
   relatedImages:
   - image: quay.io/redhat-user-workloads/rh-openshift-builds-tenant/openshift-builds-operator-1-1@sha256:eb855e7b7e799b2b46d6480033ae320859ef469d4d23b4eb69492443e6fb270f
     name: OPENSHIFT_BUILDS_OPERATOR
@@ -108,9 +107,9 @@ spec:
     name: OPENSHIFT_BUILDS_CONTROLLER
   - image: quay.io/redhat-user-workloads/rh-openshift-builds-tenant/openshift-builds-git-cloner-1-1@sha256:0e139db4370c37e91ef7eb3e0cf9a2587cb81f37709009a37f2724d4461ed2f3
     name: OPENSHIFT_BUILDS_GIT_CLONER
-  - image:  quay.io/redhat-user-workloads/rh-openshift-builds-tenant/openshift-builds-image-processing-1-1@sha256:949a1a5150642167b6c7d2b8f6d92a2885afe453319c02495f351b2e79eff3dd
+  - image: quay.io/redhat-user-workloads/rh-openshift-builds-tenant/openshift-builds-image-processing-1-1@sha256:949a1a5150642167b6c7d2b8f6d92a2885afe453319c02495f351b2e79eff3dd
     name: OPENSHIFT_BUILDS_IMAGE_PROCESSING
-  - image:  quay.io/redhat-user-workloads/rh-openshift-builds-tenant/openshift-builds-image-bundler-1-1@sha256:7cfffdd43fdd33a20d115f35c2ba492da3c1d0e3ab970587bc888c68c47dfacf
+  - image: quay.io/redhat-user-workloads/rh-openshift-builds-tenant/openshift-builds-image-bundler-1-1@sha256:7cfffdd43fdd33a20d115f35c2ba492da3c1d0e3ab970587bc888c68c47dfacf
     name: OPENSHIFT_BUILDS_IMAGE_BUNDLER
   - image: quay.io/redhat-user-workloads/rh-openshift-builds-tenant/openshift-builds-waiter-1-1@sha256:778ad1946bdad68e1430a2fb366cee25cd98d87e44cf5ad34b87603c2f4171d0
     name: OPENSHIFT_BUILDS_WAITER
@@ -124,3 +123,4 @@ spec:
     name: OPENSHIFT_BUILDS_SHARED_RESOURCE_NODE_REGISTRAR
   - image: registry.redhat.io/openshift4/ose-kube-rbac-proxy@sha256:97cade2c1ee468261aec5400728c8d44de387b459134aec7a4c3b5ec5a335d2c
     name: OPENSHIFT_BUILDS_KUBE_RBAC_PROXY
+  version: 1.1.0

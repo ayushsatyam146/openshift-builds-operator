@@ -342,5 +342,4 @@ catalog-push: ## Push a catalog image.
 # Deploy the catalog image as a CatalogSource in the cluster.
 .PHONY: catalog-deploy
 catalog-deploy: kustomize ## Deploy the catalog image to the cluster.
-	cd config/olm && $(KUSTOMIZE) edit set image catalog=$(CATALOG_IMG)
 	$(KUSTOMIZE) build config/olm | $(KUBECTL) apply -f -
